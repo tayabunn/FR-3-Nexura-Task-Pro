@@ -1,6 +1,8 @@
 # ⚡ TaskFlow Pro - Intelligent Task Management System
 
-![TaskFlow Pro 16:9 Banner](./public/taskflow_hero_banner.png)
+<p align="center">
+  <img src="./public/taskflow_banner_16_9.png" alt="TaskFlow Pro 16:9 Widescreen Banner" width="100%" style="aspect-ratio: 16/9; object-fit: cover; border-radius: 0.375rem;" />
+</p>
 
 [![React](https://img.shields.io/badge/React-18.2-indigo.svg?style=for-the-badge&logo=react)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-5.4-purple.svg?style=for-the-badge&logo=vite)](https://vitejs.dev/)
@@ -58,7 +60,7 @@
 
 ```
 taskflow-pro/
-├── public/                  # Public static assets (taskflow_hero_banner.png)
+├── public/                  # Public static assets (taskflow_banner_16_9.png)
 ├── src/
 │   ├── components/          # Application UI components
 │   │   ├── ui/             # Shadcn UI primitives (Accordion, Custom Select)
