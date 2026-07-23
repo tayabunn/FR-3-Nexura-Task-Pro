@@ -1,7 +1,7 @@
 # ⚡ TaskFlow Pro - Intelligent Task Management System
 
 <p align="center">
-  <img src="./public/taskflow_banner_1080x720.png" alt="TaskFlow Pro 1080x720 Banner" width="1080" height="720" style="max-width: 100%; height: auto; border-radius: 0.375rem;" />
+  <img src="./public/taskflow.png" alt="TaskFlow Pro UI Overview" width="100%" style="border-radius: 0.375rem;" />
 </p>
 
 [![React](https://img.shields.io/badge/React-18.2-indigo.svg?style=for-the-badge&logo=react)](https://react.dev/)
@@ -27,7 +27,7 @@
   - **List View**: Dense tabular data view with instant inline status selectors.
 
 - 🎨 **Glassmorphism Cyber Cards**:
-  - 1080x720px fixed aspect hero graphics and custom task cover media.
+  - Unsplash hero graphics and custom task cover media.
   - Interactive **Completion Activity Progress Bar** tracking task execution state.
   - Contextual action menu (Edit, Delete, Bookmark).
   - High-contrast dynamic status capsule control buttons.
@@ -60,7 +60,7 @@
 
 ```
 taskflow-pro/
-├── public/                  # Public static assets (taskflow_banner_1080x720.png)
+├── public/                  # Public static assets (taskflow.png)
 ├── src/
 │   ├── components/          # Application UI components
 │   │   ├── ui/             # Shadcn UI primitives (Accordion, Custom Select)
