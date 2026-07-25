@@ -1,6 +1,6 @@
-# TaskFlow Pro - AI-Assisted React Application Assignment Report
+# NexuraTask Pro - AI-Assisted React Application Assignment Report
 
-**Project Name:** TaskFlow Pro  
+**Project Name:** NexuraTask Pro  
 **Developer Role:** Principal Full-Stack Engineer  
 **Tech Stack:** React 18, Tailwind CSS, Lucide React Icons, Supabase (PostgreSQL + Auth + RLS)  
 
@@ -8,7 +8,7 @@
 
 ## 1. Overview of the Completed Application
 
-**TaskFlow Pro** is an enterprise-grade, high-performance task management application built with React and powered by Supabase for backend services (Authentication, PostgreSQL Database, and Row Level Security). 
+**NexuraTask Pro** is an enterprise-grade, high-performance task management application built with React and powered by Supabase for backend services (Authentication, PostgreSQL Database, and Row Level Security). 
 
 ### Key Features Implemented:
 - **Supabase Authentication:** Full Email + Password sign-up and log-in, active session tracking via `useAuth` hook, protected app routing, and user profile header with logout capabilities.

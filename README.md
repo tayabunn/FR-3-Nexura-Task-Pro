@@ -1,16 +1,16 @@
-# ⚡ TaskFlow Pro - Intelligent Task Management System
+# ⚡ NexuraTask Pro - Intelligent Task Management System
 
 <p align="center">
-  <img src="./public/taskflow.png" alt="TaskFlow Pro UI Overview" width="100%" style="border-radius: 0.375rem;" />
+  <img src="./public/taskflow.png" alt="NexuraTask Pro UI Overview" width="100%" style="border-radius: 0.375rem;" />
 </p>
 
-[![React](https://img.shields.io/badge/React-18.2-indigo.svg?style=for-the-badge&logo=react)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-5.4-purple.svg?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+[![React](https://img.shields.io/badge/React-18.2-emerald.svg?style=for-the-badge&logo=react)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-5.4-teal.svg?style=for-the-badge&logo=vite)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38bdf8.svg?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![Supabase](https://img.shields.io/badge/Supabase-Database_%26_Auth-3ecf8e.svg?style=for-the-badge&logo=supabase)](https://supabase.com/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
-**TaskFlow Pro** is a modern, high-performance task management application featuring **Supabase authentication**, PostgreSQL database integration, dynamic multi-view dashboards, and a state-of-the-art **Outfit Google Font** design system with full **Dark/Light theme switching**.
+**NexuraTask Pro** is a modern, high-performance task management application featuring **Supabase authentication**, PostgreSQL database integration, dynamic multi-view dashboards, and a state-of-the-art **Outfit Google Font** design system with full **Dark/Light theme switching**.
 
 ---
 
@@ -117,7 +117,7 @@ VITE_SUPABASE_URL=https://your-supabase-project-id.supabase.co
 VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
 ```
 
-> **Note**: If environment variables are omitted, TaskFlow Pro automatically runs in **Demo Mode** with 12 pre-loaded sample tasks.
+> **Note**: If environment variables are omitted, NexuraTask Pro automatically runs in **Demo Mode** with 12 pre-loaded sample tasks.
 
 ### 4. Run Locally
 
@@ -142,3 +142,5 @@ npm run build
 ## 📄 License
 
 Distributed under the MIT License. See `LICENSE` for details.
+
+# FR-3-Nexura-Task-Pro

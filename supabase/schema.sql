@@ -1,5 +1,5 @@
 -- =========================================================
--- TaskFlow Pro - Supabase Database Setup SQL Script
+-- NexuraTask Pro - Supabase Database Setup SQL Script
 -- Step 1: Table Creation + Row Level Security (RLS) Policies
 -- =========================================================
 
