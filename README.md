@@ -1,7 +1,7 @@
 # ⚡ NexuraTask Pro - Intelligent Task Management System
 
 <p align="center">
-  <img src="./public/taskflow.png" alt="NexuraTask Pro UI Overview" width="100%" style="border-radius: 0.375rem;" />
+  <img src="./public/nexuratask.png" alt="NexuraTask Pro UI Overview" width="100%" style="border-radius: 0.375rem;" />
 </p>
 
 [![React](https://img.shields.io/badge/React-18.2-emerald.svg?style=for-the-badge&logo=react)](https://react.dev/)
