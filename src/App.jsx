@@ -89,8 +89,8 @@ export function App() {
   if (authLoading) {
     return (
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex flex-col items-center justify-center space-y-4">
-        <div className="w-12 h-12 border-4 border-indigo-500/30 border-t-indigo-500 rounded-md animate-spin" />
-        <p className="text-sm font-medium text-slate-500 dark:text-slate-400">Loading TaskFlow Pro...</p>
+        <div className="w-12 h-12 border-4 border-emerald-500/30 border-t-emerald-500 rounded-md animate-spin" />
+        <p className="text-sm font-medium text-slate-500 dark:text-slate-400">Loading NexuraTask Pro...</p>
       </div>
     );
   }
@@ -102,7 +102,7 @@ export function App() {
 
   // Main Authenticated Dashboard with w-[80%] container width
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 selection:bg-indigo-500 selection:text-white transition-colors duration-200">
+    <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 selection:bg-emerald-500 selection:text-white transition-colors duration-200">
 
       {/* Top Header Navbar */}
       <Navbar
