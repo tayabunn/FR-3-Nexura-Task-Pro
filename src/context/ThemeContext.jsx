@@ -8,7 +8,7 @@ const ThemeContext = createContext({
 
 export function ThemeProvider({ children }) {
   const [theme, setThemeState] = useState(() => {
-    const saved = localStorage.getItem('taskflow_theme');
+    const saved = localStorage.getItem('nexuratask_theme') || localStorage.getItem('taskflow_theme');
     return saved || 'dark';
   });
 
@@ -21,7 +21,7 @@ export function ThemeProvider({ children }) {
       root.classList.remove('light');
       root.classList.add('dark');
     }
-    localStorage.setItem('taskflow_theme', theme);
+    localStorage.setItem('nexuratask_theme', theme);
   }, [theme]);
 
   const setTheme = (newTheme) => {

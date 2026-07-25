@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { supabase, isSupabaseConfigured } from '../lib/supabase';
 
-const MOCK_AUTH_KEY = 'taskflow_pro_mock_user';
+const MOCK_AUTH_KEY = 'nexuratask_pro_mock_user';
+const LEGACY_MOCK_AUTH_KEY = 'taskflow_pro_mock_user';
 
 /**
  * Custom hook for managing Supabase Authentication state and operations.
@@ -15,7 +16,10 @@ export function useAuth() {
   useEffect(() => {
     if (!isSupabaseConfigured) {
       // Fallback local demo auth session
-      const stored = localStorage.getItem(MOCK_AUTH_KEY);
+      let stored = localStorage.getItem(MOCK_AUTH_KEY);
+      if (!stored) {
+        stored = localStorage.getItem(LEGACY_MOCK_AUTH_KEY);
+      }
       if (stored) {
         try {
           setUser(JSON.parse(stored));

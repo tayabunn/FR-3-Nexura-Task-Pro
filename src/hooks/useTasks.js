@@ -1,7 +1,8 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import { supabase, isSupabaseConfigured } from '../lib/supabase';
 
-const MOCK_TASKS_KEY = 'taskflow_pro_mock_tasks_v2';
+const MOCK_TASKS_KEY = 'nexuratask_pro_mock_tasks_v2';
+const LEGACY_MOCK_TASKS_KEY = 'taskflow_pro_mock_tasks_v2';
 
 const INITIAL_DEMO_TASKS = [
   {
@@ -159,7 +160,10 @@ export function useTasks(user) {
     setError(null);
 
     if (!isSupabaseConfigured) {
-      const stored = localStorage.getItem(MOCK_TASKS_KEY);
+      let stored = localStorage.getItem(MOCK_TASKS_KEY);
+      if (!stored) {
+        stored = localStorage.getItem(LEGACY_MOCK_TASKS_KEY);
+      }
       if (stored) {
         try {
           setTasks(JSON.parse(stored));
