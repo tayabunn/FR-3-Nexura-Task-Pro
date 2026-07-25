@@ -20,7 +20,8 @@ export default {
         }
       },
       boxShadow: {
-        'glow': '0 0 20px -5px rgba(99, 102, 241, 0.35)',
+        'glow': '0 0 20px -5px rgba(16, 185, 129, 0.45)',
+        'glow-teal': '0 0 20px -5px rgba(20, 184, 166, 0.45)',
         'card': '0 4px 20px -2px rgba(0, 0, 0, 0.5)',
       },
       animation: {
