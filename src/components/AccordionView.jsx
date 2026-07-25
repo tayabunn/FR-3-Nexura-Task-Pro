@@ -29,8 +29,8 @@ export function AccordionView({ tasks, onEdit, onDelete, onStatusChange, onOpenC
     {
       id: 'In Progress',
       title: 'In Progress Tasks',
-      icon: <Clock className="w-5 h-5 text-indigo-500 dark:text-indigo-400 shrink-0 animate-pulse" />,
-      badgeBg: 'bg-indigo-500/20 text-indigo-700 dark:text-indigo-300 border-indigo-500/30',
+      icon: <Clock className="w-5 h-5 text-cyan-500 dark:text-cyan-400 shrink-0 animate-pulse" />,
+      badgeBg: 'bg-cyan-500/20 text-cyan-700 dark:text-cyan-300 border-cyan-500/30',
       description: 'Tasks currently actively being worked on',
     },
     {
@@ -54,7 +54,7 @@ export function AccordionView({ tasks, onEdit, onDelete, onStatusChange, onOpenC
       {/* Header Info Banner */}
       <div className="bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800/80 rounded-md p-4 flex items-center justify-between shadow-sm">
         <div className="flex items-center space-x-3">
-          <div className="p-2 rounded-md bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20">
+          <div className="p-2 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
             <Layers className="w-5 h-5" />
           </div>
           <div>

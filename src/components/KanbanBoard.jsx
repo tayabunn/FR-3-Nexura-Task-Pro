@@ -19,9 +19,9 @@ export function KanbanBoard({ tasks, onEdit, onDelete, onStatusChange, onOpenCre
     {
       id: 'In Progress',
       title: 'In Progress',
-      icon: <Clock className="w-4 h-4 text-indigo-500 dark:text-indigo-400 shrink-0" />,
-      headerBorder: 'border-indigo-500/50',
-      badgeBg: 'bg-indigo-500/20 text-indigo-700 dark:text-indigo-300 border border-indigo-500/30',
+      icon: <Clock className="w-4 h-4 text-cyan-500 dark:text-cyan-400 shrink-0" />,
+      headerBorder: 'border-cyan-500/50',
+      badgeBg: 'bg-cyan-500/20 text-cyan-700 dark:text-cyan-300 border border-cyan-500/30',
     },
     {
       id: 'Completed',
@@ -83,7 +83,7 @@ export function KanbanBoard({ tasks, onEdit, onDelete, onStatusChange, onOpenCre
             onDrop={(e) => handleDrop(e, col.id)}
             className={`flex flex-col rounded-md bg-slate-100/80 dark:bg-slate-900/40 border p-4 min-h-[500px] transition-all ${
               isDraggingOver
-                ? 'border-indigo-500 bg-indigo-50/50 dark:bg-indigo-950/20 ring-2 ring-indigo-500/30'
+                ? 'border-emerald-500 bg-emerald-50/50 dark:bg-emerald-950/20 ring-2 ring-emerald-500/30'
                 : 'border-slate-200 dark:border-slate-800/80'
             }`}
           >

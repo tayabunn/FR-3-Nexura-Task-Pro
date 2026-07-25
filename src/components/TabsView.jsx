@@ -19,9 +19,9 @@ export function TabsView({ tasks, onEdit, onDelete, onStatusChange, onOpenCreate
     {
       id: 'All',
       label: 'All Tasks',
-      icon: <Layers className="w-4 h-4 text-indigo-500 dark:text-indigo-400 shrink-0" />,
-      badgeBg: 'bg-indigo-500/20 text-indigo-700 dark:text-indigo-300',
-      activeClass: 'bg-indigo-600 text-white shadow-md shadow-indigo-500/20 border border-indigo-500',
+      icon: <Layers className="w-4 h-4 text-emerald-500 dark:text-emerald-400 shrink-0" />,
+      badgeBg: 'bg-emerald-500/20 text-emerald-700 dark:text-emerald-300',
+      activeClass: 'bg-emerald-600 text-white shadow-md shadow-emerald-500/20 border border-emerald-500',
       inactiveClass: 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800'
     },
     {
@@ -35,10 +35,10 @@ export function TabsView({ tasks, onEdit, onDelete, onStatusChange, onOpenCreate
     {
       id: 'In Progress',
       label: 'In Progress',
-      icon: <Clock className="w-4 h-4 text-indigo-500 dark:text-indigo-400 animate-pulse shrink-0" />,
-      badgeBg: 'bg-indigo-500/20 text-indigo-700 dark:text-indigo-300',
-      activeClass: 'bg-indigo-600 text-white shadow-md shadow-indigo-500/30 border border-indigo-500',
-      inactiveClass: 'bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800/80 hover:bg-indigo-100 dark:hover:bg-indigo-900/60'
+      icon: <Clock className="w-4 h-4 text-cyan-500 dark:text-cyan-400 animate-pulse shrink-0" />,
+      badgeBg: 'bg-cyan-500/20 text-cyan-700 dark:text-cyan-300',
+      activeClass: 'bg-cyan-600 text-white shadow-md shadow-cyan-500/30 border border-cyan-500',
+      inactiveClass: 'bg-cyan-50 dark:bg-cyan-950/40 text-cyan-700 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-800/80 hover:bg-cyan-100 dark:hover:bg-cyan-900/60'
     },
     {
       id: 'Completed',
@@ -112,7 +112,7 @@ export function TabsView({ tasks, onEdit, onDelete, onStatusChange, onOpenCreate
           </p>
           <button
             onClick={onOpenCreateModal}
-            className="inline-flex items-center space-x-2 bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-md text-xs font-semibold shadow-md transition-all"
+            className="inline-flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-md text-xs font-semibold shadow-md transition-all"
           >
             <Plus className="w-4 h-4" />
             <span>Create New Task</span>

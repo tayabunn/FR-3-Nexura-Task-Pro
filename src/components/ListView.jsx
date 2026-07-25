@@ -14,7 +14,7 @@ export function ListView({ tasks, onEdit, onDelete, onStatusChange }) {
 
   const statusOptions = [
     { value: 'To Do', label: 'To Do', icon: <CircleDot className="w-3.5 h-3.5 text-slate-400" /> },
-    { value: 'In Progress', label: 'In Progress', icon: <Clock className="w-3.5 h-3.5 text-indigo-400" /> },
+    { value: 'In Progress', label: 'In Progress', icon: <Clock className="w-3.5 h-3.5 text-cyan-400" /> },
     { value: 'Completed', label: 'Completed', icon: <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" /> },
     { value: 'Failed', label: 'Failed', icon: <XCircle className="w-3.5 h-3.5 text-rose-400" /> },
   ];
@@ -66,7 +66,7 @@ export function ListView({ tasks, onEdit, onDelete, onStatusChange }) {
                         />
                       )}
                       <div className="min-w-0 flex-1">
-                        <p className="font-semibold text-slate-900 dark:text-slate-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-300 transition-colors truncate">
+                        <p className="font-semibold text-slate-900 dark:text-slate-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition-colors truncate">
                           {task.title}
                         </p>
                         {task.description && (
@@ -115,7 +115,7 @@ export function ListView({ tasks, onEdit, onDelete, onStatusChange }) {
                         className="p-1.5 rounded-md text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
                         title="Edit Task"
                       >
-                        <Edit3 className="w-4 h-4 text-indigo-500 dark:text-indigo-400" />
+                        <Edit3 className="w-4 h-4 text-emerald-500 dark:text-emerald-400" />
                       </button>
                       <button
                         onClick={() => onDelete(task.id)}
