@@ -47,7 +47,7 @@ export function CustomSelect({
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className={`flex items-center justify-between space-x-2 rounded-md font-bold transition-all focus:outline-none focus:ring-2 focus:ring-indigo-500 cursor-pointer ${
+        className={`flex items-center justify-between space-x-2 rounded-md font-bold transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500 cursor-pointer ${
           size === 'sm' ? 'px-2.5 py-1 text-[11px]' : 'px-3 py-2 text-xs'
         } ${baseButtonClasses}`}
       >
@@ -70,7 +70,7 @@ export function CustomSelect({
                 onClick={() => handleSelect(option.value)}
                 className={`w-full flex items-center justify-between px-2.5 py-2 rounded-md text-xs font-semibold transition-colors ${
                   isSelected
-                    ? 'bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 font-bold'
+                    ? 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-bold'
                     : 'text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-900 hover:text-slate-900 dark:hover:text-white'
                 }`}
               >
@@ -78,7 +78,7 @@ export function CustomSelect({
                   {option.icon && <span className="shrink-0">{option.icon}</span>}
                   <span className="truncate">{option.label}</span>
                 </div>
-                {isSelected && <Check className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400 shrink-0 ml-1" />}
+                {isSelected && <Check className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0 ml-1" />}
               </button>
             );
           })}

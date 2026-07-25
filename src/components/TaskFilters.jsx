@@ -27,7 +27,7 @@ export function TaskFilters({
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           placeholder="Search tasks by title or details..."
-          className="w-full pl-10 pr-9 py-2 bg-slate-100 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 rounded-md text-xs text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
+          className="w-full pl-10 pr-9 py-2 bg-slate-100 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 rounded-md text-xs text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all"
         />
         {searchQuery && (
           <button
@@ -51,7 +51,7 @@ export function TaskFilters({
             onClick={() => setPriorityFilter(p)}
             className={`px-3 py-1.5 rounded-md text-xs font-semibold whitespace-nowrap transition-all ${
               priorityFilter === p
-                ? 'bg-indigo-600 text-white shadow-md'
+                ? 'bg-emerald-600 text-white shadow-md'
                 : 'bg-slate-100 dark:bg-slate-950 text-slate-700 dark:text-slate-400 border border-slate-200 dark:border-slate-800 hover:text-slate-900 dark:hover:text-slate-200 hover:border-slate-300 dark:hover:border-slate-700'
             }`}
           >
@@ -61,7 +61,7 @@ export function TaskFilters({
 
         {/* Task Counter badge */}
         <div className="ml-auto text-xs text-slate-500 dark:text-slate-400 font-mono pl-2 border-l border-slate-200 dark:border-slate-800">
-          <span className="text-indigo-600 dark:text-indigo-400 font-bold">{filteredCount}</span> / {totalCount}
+          <span className="text-emerald-600 dark:text-emerald-400 font-bold">{filteredCount}</span> / {totalCount}
         </div>
       </div>
 

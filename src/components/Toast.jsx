@@ -12,13 +12,13 @@ export function Toast({ toast, onClose }) {
   const icons = {
     success: <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />,
     error: <AlertCircle className="w-5 h-5 text-rose-400 shrink-0" />,
-    info: <Info className="w-5 h-5 text-indigo-400 shrink-0" />,
+    info: <Info className="w-5 h-5 text-teal-400 shrink-0" />,
   };
 
   const borders = {
     success: 'border-emerald-500/30 bg-emerald-950/80 text-emerald-200',
     error: 'border-rose-500/30 bg-rose-950/80 text-rose-200',
-    info: 'border-indigo-500/30 bg-indigo-950/80 text-indigo-200',
+    info: 'border-teal-500/30 bg-teal-950/80 text-teal-200',
   };
 
   return (

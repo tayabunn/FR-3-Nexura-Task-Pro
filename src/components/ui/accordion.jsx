@@ -59,12 +59,12 @@ export function AccordionTrigger({ children, value, isOpen, className = "", onCl
       type="button"
       onClick={handleClick}
       data-state={isOpen ? "open" : "closed"}
-      className={`w-full flex items-center justify-between p-4 text-left transition-all hover:bg-slate-100 dark:hover:bg-slate-800/40 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 ${className}`}
+      className={`w-full flex items-center justify-between p-4 text-left transition-all hover:bg-slate-100 dark:hover:bg-slate-800/40 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 ${className}`}
     >
       <div className="flex items-center space-x-3 flex-1">{children}</div>
       <ChevronDown
         className={`w-4 h-4 text-slate-400 shrink-0 transition-transform duration-200 ml-2 ${
-          isOpen ? "rotate-180 text-indigo-500 dark:text-indigo-400" : ""
+          isOpen ? "rotate-180 text-emerald-500 dark:text-emerald-400" : ""
         }`}
       />
     </button>

@@ -43,14 +43,14 @@ export function TaskCard({ task, onEdit, onDelete, onStatusChange }) {
 
   const statusProgress = {
     'To Do': { pct: 15, color: 'bg-slate-400', label: 'Queued' },
-    'In Progress': { pct: 65, color: 'bg-indigo-500 animate-pulse', label: 'In Progress' },
+    'In Progress': { pct: 65, color: 'bg-cyan-500 animate-pulse', label: 'In Progress' },
     'Completed': { pct: 100, color: 'bg-emerald-500', label: '100% Done' },
     'Failed': { pct: 30, color: 'bg-rose-500', label: 'Action Needed' },
   };
 
   const statusButtonStyles = {
     'To Do': 'bg-slate-800 text-white border-slate-700 hover:bg-slate-700 dark:bg-slate-800 dark:text-white dark:border-slate-700 dark:hover:bg-slate-700',
-    'In Progress': 'bg-indigo-600 text-white border-indigo-600 hover:bg-indigo-700 dark:bg-indigo-600 dark:text-white dark:border-indigo-500 dark:hover:bg-indigo-500 shadow-md shadow-indigo-500/20',
+    'In Progress': 'bg-cyan-600 text-white border-cyan-600 hover:bg-cyan-700 dark:bg-cyan-600 dark:text-white dark:border-cyan-500 dark:hover:bg-cyan-500 shadow-md shadow-cyan-500/20',
     'Completed': 'bg-emerald-600 text-white border-emerald-600 hover:bg-emerald-700 dark:bg-emerald-600 dark:text-white dark:border-emerald-500 dark:hover:bg-emerald-500 shadow-md shadow-emerald-500/20',
     'Failed': 'bg-rose-600 text-white border-rose-600 hover:bg-rose-700 dark:bg-rose-600 dark:text-white dark:border-rose-500 dark:hover:bg-rose-500 shadow-md shadow-rose-500/20',
   };
@@ -66,7 +66,7 @@ export function TaskCard({ task, onEdit, onDelete, onStatusChange }) {
 
   const statusOptions = [
     { value: 'To Do', label: 'To Do', icon: <CircleDot className="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" /> },
-    { value: 'In Progress', label: 'In Progress', icon: <Clock className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" /> },
+    { value: 'In Progress', label: 'In Progress', icon: <Clock className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" /> },
     { value: 'Completed', label: 'Completed', icon: <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" /> },
     { value: 'Failed', label: 'Failed', icon: <XCircle className="w-3.5 h-3.5 text-rose-600 dark:text-rose-400" /> },
   ];
@@ -114,7 +114,7 @@ export function TaskCard({ task, onEdit, onDelete, onStatusChange }) {
               onClick={() => setIsBookmarked(!isBookmarked)}
               className={`w-7 h-7 rounded-md backdrop-blur-md flex items-center justify-center transition-all ${
                 isBookmarked 
-                  ? 'bg-indigo-600 text-white shadow-md' 
+                  ? 'bg-emerald-600 text-white shadow-md' 
                   : 'bg-slate-950/50 text-white/90 hover:bg-slate-950/80 hover:text-white border border-white/10'
               }`}
               title="Bookmark"
@@ -137,7 +137,7 @@ export function TaskCard({ task, onEdit, onDelete, onStatusChange }) {
                   onClick={() => { setShowMenu(false); onEdit(task); }}
                   className="w-full px-3 py-2 text-left flex items-center space-x-2 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-900 rounded-md"
                 >
-                  <Edit3 className="w-3.5 h-3.5 text-indigo-500 dark:text-indigo-400" />
+                  <Edit3 className="w-3.5 h-3.5 text-emerald-500 dark:text-emerald-400" />
                   <span>Edit Task</span>
                 </button>
                 <button
@@ -162,7 +162,7 @@ export function TaskCard({ task, onEdit, onDelete, onStatusChange }) {
         {/* Card Body Area */}
         <div className="p-4 pt-1">
           {/* Title Row */}
-          <h3 className="text-base font-bold text-slate-900 dark:text-white tracking-tight line-clamp-1 group-hover:text-indigo-600 dark:group-hover:text-indigo-300 transition-colors mb-1">
+          <h3 className="text-base font-bold text-slate-900 dark:text-white tracking-tight line-clamp-1 group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition-colors mb-1">
             {task.title}
           </h3>
 
@@ -177,7 +177,7 @@ export function TaskCard({ task, onEdit, onDelete, onStatusChange }) {
           <div className="mb-4 space-y-1">
             <div className="flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 font-mono">
               <span className="flex items-center space-x-1">
-                <Activity className="w-3 h-3 text-indigo-500 dark:text-indigo-400" />
+                <Activity className="w-3 h-3 text-emerald-500 dark:text-emerald-400" />
                 <span>Completion Status</span>
               </span>
               <span className="font-semibold text-slate-700 dark:text-slate-200">{currentProgress.label}</span>
@@ -198,7 +198,7 @@ export function TaskCard({ task, onEdit, onDelete, onStatusChange }) {
               }`}>
                 <span className="text-slate-400 dark:text-slate-400">Target Date</span>
                 <div className="flex items-center space-x-1.5">
-                  {dueInfo.isOverdue ? <AlertCircle className="w-3.5 h-3.5 text-rose-500" /> : <Calendar className="w-3.5 h-3.5 text-indigo-500 dark:text-indigo-400" />}
+                  {dueInfo.isOverdue ? <AlertCircle className="w-3.5 h-3.5 text-rose-500" /> : <Calendar className="w-3.5 h-3.5 text-emerald-500 dark:text-emerald-400" />}
                   <span>{dueInfo.formatted}</span>
                 </div>
               </div>
